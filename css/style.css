@@ -120,8 +120,11 @@ main .container,
 /* Start of first row */
 .main-right .row {
     color: white; /*togliere*/
-    justify-content: space-between;
     width: 100%;
+}
+
+.main-right .row.first {
+    justify-content: space-between;
 }
 
 .main-right .row .container.album-info {
@@ -146,7 +149,13 @@ main .container,
     height: 100%;
     display: none;
 }
-/* End */
+
+/* Start of second, third rows */
+.main-right .row.second .container.album-info:first-child, 
+.main-right .row.third .container.album-info:first-child {
+    margin-right: 10px;
+}
+
 /* End of main */
 
 /* Start of footer */
