@@ -258,7 +258,31 @@ footer .container-left .fa-heart {
 }
 
 /* Start of container-center */
+footer .container-center {
+    border: 1px dashed red; /*togliere*/
+    width: calc(100% / 4);
+}
+
 /* Start of top-container bottom */
+footer .container-center .sub-container.top ul.flex {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: var(--text-color-2);
+}
+
+footer .container-center .sub-container.top ul li {
+    margin: 0rem 0.5rem 1rem 0.5rem;
+}
+
+footer .container-center .sub-container.top ul li:nth-child(3) div {
+    border: 2px solid var(--text-color-2);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Start of sub-container bottom */
 footer .container-center .sub-container.bottom {
@@ -272,14 +296,14 @@ footer .container-center .sub-container.bottom span {
 
 footer .container-center .sub-container.bottom .lenght {
     height: 0.2rem;
-    width: 25rem;
+    width: 80%;
     background-color: var(--text-color-1);
     margin: 0rem 0.5rem;
 }
 
 footer .container-center .sub-container.bottom .played {
     height: 0.2rem;
-    width: 6rem;
+    width: 20%;
     background-color: var(--text-color-2);
 }
 
