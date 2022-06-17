@@ -154,8 +154,8 @@ main .container,
 
 .main-right .row .container.album-info {
     width: calc(100% / 6 - 10px);
-    background-color: red;
-    border: 1px dashed white;
+    /* background-color: red; */
+    /* border: 1px dashed white; */
 }
 
 .main-right .row .container.album-info h3 {
@@ -219,7 +219,7 @@ footer {
     color: var(--text-color-1);
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 /* Start of container-left */
@@ -259,11 +259,14 @@ footer .container-left .fa-heart {
 
 /* Start of container-center */
 footer .container-center {
-    border: 1px dashed red; /*togliere*/
     width: calc(100% / 4);
 }
 
 /* Start of top-container bottom */
+footer .container-center .sub-container.top {
+    justify-content: center;
+}
+
 footer .container-center .sub-container.top ul.flex {
     justify-content: center;
     align-items: center;
@@ -276,16 +279,17 @@ footer .container-center .sub-container.top ul li {
 }
 
 footer .container-center .sub-container.top ul li:nth-child(3) div {
-    border: 2px solid var(--text-color-2);
+    border: 3px solid var(--text-color-2);
     border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
     align-items: center;
     justify-content: center;
 }
 
 /* Start of sub-container bottom */
 footer .container-center .sub-container.bottom {
+    justify-content: center;
     align-items: center;
 }
 
@@ -307,9 +311,38 @@ footer .container-center .sub-container.bottom .played {
     background-color: var(--text-color-2);
 }
 
+footer .container-center .sub-container.bottom .lenght,
+footer .container-center .sub-container.bottom .played {
+    border-radius: 10px;
+}
+
 /* Start of container-right */
+footer .container-right {
+    color: var(--text-color-2);
+    justify-content: center;
+    align-items: center;
+}
 
+footer .container-right i {
+    margin-right: 0.5rem;
+}
 
+footer .container-right .max-vol {
+    height: 0.2rem;
+    width: 6rem;
+    background-color: var(--text-color-1);
+}
+
+footer .container-right .actual-vol {
+    height: 0.2rem;
+    width: 2rem;
+    background-color: var(--text-color-2);
+}
+
+footer .container-right .max-vol,
+footer .container-right .actual-vol {
+    border-radius: 10px;
+}
 /* End of footer */
 
 /* Effects */
