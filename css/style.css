@@ -157,7 +157,7 @@ main .container,
 .main-right .row .card-song .album-art img {
     width: 100%;
     height: 100%;
-    display: block; /* used to remove the bottom margin; overlay will perfectly stay above image this way*/
+    display: block; /* used to remove the bottom margin; in this way, the overlay will perfectly stay above image */
 }
 
 .main-right .row .card-song .overlay {
