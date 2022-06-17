@@ -89,6 +89,7 @@ main .container,
     height: 100px;
     justify-content: flex-end;
     align-items: center;
+    opacity: 0.8;
 }
 
 .main-right .call-to-action .btn {
@@ -147,16 +148,26 @@ main .container,
     border: 1px dashed white;
 }
 
+.main-right .row .card-song .album-art {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
 .main-right .row .card-song .album-art img {
     width: 100%;
     height: 100%;
+    display: block; /* used to remove the bottom margin; overlay will perfectly stay above image this way*/
 }
 
-.main-right .row .card-song .overlay { /*controllo*/
+.main-right .row .card-song .overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: none;
+    position: absolute;
 }
 
 .main-right .album-info p {
@@ -189,7 +200,7 @@ footer {
 /* End of footer */
 
 /* Effects */
-.main-right .row .card-song .album-art:hover .overlay { /*controllo*/
+.main-right .row .card-song .album-art:hover .overlay {
     display: block;
 }
 
@@ -234,4 +245,5 @@ footer {
 Note: working with 1400px width - 1000px height as default display size
 
 To do
++ overlay effect add to every card
 + 
