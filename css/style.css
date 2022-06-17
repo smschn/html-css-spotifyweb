@@ -7,7 +7,9 @@
 /* General style rules */
 :root {
     --footer-c: #282828;
-    --bg-4: #080b12;
+    --bgc-1: #141922;
+    --bgc-2: #000;
+    --bgc-4: #080b12;
     --text-color-1: #7f8186;
     --text-color-2: #fff;
 }
@@ -58,19 +60,19 @@ body {
 /*Start of main-left*/
 .main-left {
     width: 250px;
-    background-color: orange;
+    background-color: orange; /*bgc-2*/
 }
 /* End */
 
 /*Start of main-right*/
 .main-right {
     width: calc(100% - 250px);
-    background-color: pink;
+    background-color: var(--bgc-1);
     overflow: scroll;
 }
 
 .main-right .call-to-action {
-    background-color: var(--bg-4);
+    background-color: var(--bgc-4);
     width: calc(100% - 250px);
     height: 100px;
     justify-content: flex-end;
@@ -78,9 +80,14 @@ body {
 }
 
 .main-right .call-to-action .btn {
-    width: 50px;
+    width: 200px;
     height: 50px;
     background-color: #fff;
+    padding: 30px
+}
+
+.main-right .sub-container {
+    margin-top: 100px;
 }
 /* End */
 /* End of main */
