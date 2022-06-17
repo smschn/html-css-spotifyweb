@@ -57,20 +57,21 @@ body {
     height: calc(100vh - 100px);
 }
 
-/*Start of main-left*/
+/* Start of main-left */
 .main-left {
     width: 250px;
     background-color: orange; /*bgc-2*/
 }
 /* End */
 
-/*Start of main-right*/
+/* Start of main-right */
 .main-right {
     width: calc(100% - 250px);
     background-color: var(--bgc-1);
     overflow: scroll;
 }
 
+/* Start of cta */
 .main-right .call-to-action {
     background-color: var(--bgc-4);
     width: calc(100% - 250px);
@@ -86,8 +87,22 @@ body {
     padding: 30px
 }
 
+/* Start of sub-container */
 .main-right .sub-container {
     margin-top: 100px;
+}
+
+/* Start of navbar */
+.main-right .navbar {
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-1);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-right .navbar div {
+    padding: 5px;
 }
 /* End */
 /* End of main */
@@ -98,7 +113,7 @@ footer {
     bottom: 0px;
     left: 0px;
 }
-/* End */
+/* End of footer */
 
 /* Start of media queries */
 /* Start of md-layout max 767px*/
@@ -114,7 +129,6 @@ footer {
         background-color: black;
     }
 }
-/* End */
 
 /* Start of xs-layout max 575px*/
 @media screen and (max-width: 575px) {
@@ -122,7 +136,7 @@ footer {
         background-color: purple;
     }
 }
-/* End */
+/* End of media queries */
 
 /* Debug */
 .debug {
