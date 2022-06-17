@@ -7,6 +7,7 @@
 /* General style rules */
 :root {
     --footer-c: #282828;
+    --bg-4: #080b12;
     --text-color-1: #7f8186;
     --text-color-2: #fff;
 }
@@ -35,10 +36,16 @@ body {
     display: flex;
 }
 
-.fixed-bott {
+.p-relative {
+    position: relative;
+}
+
+.p-fixed {
     position: fixed;
-    bottom: 0px;
-    left: 0px;
+}
+
+.z-ind {
+    z-index: 999;
 }
 /* End */
 
@@ -50,16 +57,30 @@ body {
 
 /*Start of main-left*/
 .main-left {
-    width: 300px;
+    width: 250px;
     background-color: orange;
 }
 /* End */
 
 /*Start of main-right*/
 .main-right {
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     background-color: pink;
     overflow: scroll;
+}
+
+.main-right .call-to-action {
+    background-color: var(--bg-4);
+    width: calc(100% - 250px);
+    height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-right .call-to-action .btn {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
 }
 /* End */
 /* End of main */
@@ -67,6 +88,8 @@ body {
 /* Start of footer */
 footer {
     height: 100px;
+    bottom: 0px;
+    left: 0px;
 }
 /* End */
 
