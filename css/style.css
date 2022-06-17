@@ -7,6 +7,8 @@
 /* General style rules */
 :root {
     --footer-c: #282828;
+    --text-color-1: #7f8186;
+    --text-color-2: #fff;
 }
 /* End */
 
@@ -19,6 +21,10 @@
 /* General structure rules */
 :root {
     --footer-c: #282828;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -37,22 +43,23 @@ body {
 /* End */
 
 /* Start of main */
-
 .main-left,
 .main-right {
     height: calc(100vh - 100px);
 }
+
 /*Start of main-left*/
 .main-left {
-    width: calc(100% / 6);
+    width: 300px;
     background-color: orange;
 }
 /* End */
 
 /*Start of main-right*/
 .main-right {
-    width: calc(100% / 6 * 5);
+    width: calc(100% - 300px);
     background-color: pink;
+    overflow: scroll;
 }
 /* End */
 /* End of main */
