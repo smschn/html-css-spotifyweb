@@ -3,3 +3,84 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+/* General style rules */
+:root {
+    --footer-c: #282828;
+}
+/* End */
+
+/* General measures rules */
+.w-100 {
+    width: 100%;
+}
+/* End */
+
+/* General structure rules */
+:root {
+    --footer-c: #282828;
+}
+
+body {
+    position: relative;
+}
+
+.fixed-bott {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+/* End */
+
+/* Start of main */
+/* End */
+
+/* Start of footer */
+footer {
+    height: 100px;
+}
+/* End */
+
+/* Start of media queries */
+/* Start of md-layout max 767px*/
+@media screen and (max-width: 1199px) {
+    body {
+        background-color: grey;
+    }
+}
+
+/* Start of s-layout max 767px*/
+@media screen and (max-width: 767px) {
+    body {
+        background-color: black;
+    }
+}
+/* End */
+
+/* Start of xs-layout max 575px*/
+@media screen and (max-width: 575px) {
+    body {
+        background-color: purple;
+    }
+}
+/* End */
+
+/* Debug */
+.debug {
+    border: 1px dashed red;
+    background-color: lightblue;
+}
+
+.d-box {
+    border: 1px dashed red;
+    background-color: lightgreen;
+    width: 100px;
+    height: 70px;
+}
+
+/*
+
+Note: working with 1200px width as default display size
+
+To do
++ 
