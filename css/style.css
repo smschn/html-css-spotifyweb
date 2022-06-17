@@ -75,15 +75,39 @@ main .container,
     background-color: orange; /*bgc-2*/
 }
 
-.main-left .sub-container {
+.main-left .container {
     height: 100%;
+    padding: 0.2rem;
+}
+
+/* Start of upper part */
+.main-left .sub-container .logo-big {
+    width: 10rem;
+}
+
+.main-left .sub-container .logo-small {
+    display: none;
+}
+
+.main-left .sub-container .item-left {
+    width: 2rem;
+}
+
+.main-left .sub-container  {
+    align-items: center;
+}
+
+.main-left .lista {
+    overflow: scroll;
+    max-height: 250px;
 }
 
 /* Start of lower container */
-.main-left .sub-container .d-box:last-child {
+.main-left .container .d-box:last-child {
     position: absolute;
     bottom: 0px;
     left: 0px;
+    background-color: red;
 }
 /* End of main-left */
 
@@ -400,8 +424,8 @@ footer .container-right .actual-vol {
 
 /*
 
-Note: working with 1400px width - 1000px height as default display size
+Note: project done with width:1400px, height:1000px as default display size
 
 To do
-+ overlay effect add to every card
++ overlay effect add to every card with play symbol
 + 
