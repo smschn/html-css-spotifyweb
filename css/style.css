@@ -130,11 +130,6 @@ main .container,
     border: 1px dashed white;
 }
 
-.main-right .row .container.album-info {
-    width: 100%;
-    height: 100%;
-}
-
 .main-right .row .card-song .album-art {
     width: 100%;
     height: 100%;
