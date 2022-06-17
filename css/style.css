@@ -75,6 +75,18 @@ main .container,
     background-color: orange; /*bgc-2*/
 }
 
+.main-left .sub-container {
+    height: 100%;
+}
+
+/* Start of lower container */
+.main-left .sub-container .d-box:last-child {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+/* End of main-left */
+
 /* Start of main-right */
 .main-right {
     width: calc(100% - 200px);
