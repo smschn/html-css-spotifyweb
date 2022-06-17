@@ -222,9 +222,8 @@ footer {
     padding: 0.5rem;
 }
 
-/* Start of left section */
+/* Start of container-left */
 footer .container-left {
-    border: 1px red dashed;
     justify-content: center;
     align-items: center;
 }
@@ -258,10 +257,33 @@ footer .container-left .fa-heart {
     margin-right: 0.5rem;
 }
 
-/* Start of center section */
+/* Start of container-center */
+/* Start of top-container bottom */
 
+/* Start of sub-container bottom */
+footer .container-center .sub-container.bottom {
+    align-items: center;
+}
 
-/* Start of right section */
+footer .container-center .sub-container.bottom span {
+    font-size: 0.8rem;
+    color: var(--text-color-2);
+}
+
+footer .container-center .sub-container.bottom .lenght {
+    height: 0.2rem;
+    width: 25rem;
+    background-color: var(--text-color-1);
+    margin: 0rem 0.5rem;
+}
+
+footer .container-center .sub-container.bottom .played {
+    height: 0.2rem;
+    width: 6rem;
+    background-color: var(--text-color-2);
+}
+
+/* Start of container-right */
 
 
 /* End of footer */
