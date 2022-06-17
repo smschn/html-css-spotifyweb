@@ -14,13 +14,16 @@
     --text-color-1: #7f8186;
     --text-color-2: #fff;
 }
-/* End */
+
+.t-center {
+    text-align: center;
+}
 
 /* General measures rules */
 .w-100 {
     width: 100%;
 }
-/* End */
+
 
 /* General structure rules */
 :root {
@@ -50,7 +53,6 @@ body {
 .z-ind {
     z-index: 999;
 }
-/* End */
 
 /* Start of main */
 main {
@@ -68,7 +70,6 @@ main .container,
     width: 200px;
     background-color: orange; /*bgc-2*/
 }
-/* End */
 
 /* Start of main-right */
 .main-right {
@@ -117,25 +118,16 @@ main .container,
     padding: 5px;
 }
 
-/* Start of first row */
+/* Start of row general rules */
 .main-right .row {
     color: white; /*togliere*/
     width: 100%;
-}
-
-.main-right .row.first {
-    justify-content: space-between;
 }
 
 .main-right .row .container.album-info {
     width: calc(100% / 6 - 10px);
     background-color: red;
     border: 1px dashed white;
-}
-
-.main-right .row .card-song .album-art {
-    width: 100%;
-    height: 100%;
 }
 
 .main-right .row .card-song .album-art img {
@@ -150,12 +142,21 @@ main .container,
     display: none;
 }
 
+/* Start of first row */
+.main-right .row.first {
+    justify-content: space-between;
+}
+
 /* Start of second, third rows */
 .main-right .row.second .container.album-info:first-child, 
 .main-right .row.third .container.album-info:first-child {
     margin-right: 10px;
 }
 
+.main-right .row.third .container.album-info .album-art {
+    border-radius: 50%;
+    overflow: hidden;
+}
 /* End of main */
 
 /* Start of footer */
@@ -209,7 +210,7 @@ footer {
 
 /*
 
-Note: working with 1400px width as default display size
+Note: working with 1400px width - 1000px height as default display size
 
 To do
 + 
