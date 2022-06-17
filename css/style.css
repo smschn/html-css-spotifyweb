@@ -25,6 +25,10 @@ body {
     position: relative;
 }
 
+.flex {
+    display: flex;
+}
+
 .fixed-bott {
     position: fixed;
     bottom: 0px;
@@ -33,7 +37,25 @@ body {
 /* End */
 
 /* Start of main */
+
+.main-left,
+.main-right {
+    height: calc(100vh - 100px);
+}
+/*Start of main-left*/
+.main-left {
+    width: calc(100% / 6);
+    background-color: orange;
+}
 /* End */
+
+/*Start of main-right*/
+.main-right {
+    width: calc(100% / 6 * 5);
+    background-color: pink;
+}
+/* End */
+/* End of main */
 
 /* Start of footer */
 footer {
