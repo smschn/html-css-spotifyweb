@@ -73,7 +73,7 @@ main .container,
 .main-left {
     width: 200px;
     background-color: orange; /*bgc-2*/
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .main-left .container {
@@ -83,6 +83,10 @@ main .container,
 }
 
 /* Start of upper part */
+.main-left .sub-container  {
+    align-items: center;
+}
+
 .main-left .sub-container .logo-big {
     width: 10rem;
 }
@@ -95,27 +99,73 @@ main .container,
     width: 2rem;
 }
 
-.main-left .sub-container  {
+.main-left .list {
+    overflow-y: auto;
+}
+
+.main-left .list h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--text-color-2);
+}
+
+.main-left .list .container-plus {
     align-items: center;
 }
 
-.main-left .lista {
-    overflow-y: scroll;
-    max-height: 250px;
+.main-left .list .plus {
+    width: 2rem;
+    height: 2rem;
+    background-color: #919191;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
 }
 
-/* Start of lower container */
-.main-left .container .d-box:last-child {
-    background-color: red;
+.main-left .list .plus ul {
+    display: block;
+    margin: 3rem 0rem;
+}
+
+/* Start of lower part */
+.main-left .container .lower-container {
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: red; /* togliere */
     flex-grow: 1;
     flex-shrink: 0;
 }
 
-.main-left .container .d-box:last-child .sub-container {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
+.main-left .container .lower-container .sub-container {
+    background-color: burlywood /* togliere */
 }
+
+.main-left .container .lower-container .sub-container .up,
+.main-left .container .lower-container .sub-container .down {
+    align-items: center;
+    margin: 0.5rem 0rem;
+}
+
+.main-left .container .lower-container .sub-container .up .download {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.main-left .container .lower-container .sub-container .down .profile {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--text-color-1);
+}
+
+.main-left .container .lower-container .sub-container .row {
+    height: 0.2rem;
+    background-color: var(--text-color-1);
+}
+
 /* End of main-left */
 
 /* Start of main-right */
@@ -435,4 +485,6 @@ Note: project done with width:1400px, height:1000px as default display size
 
 To do
 + overlay effect add to every card with play symbol
++ overflow sostituire scroll con auto (così compare in automatico la barra quando necessario, altrimenti rimane fissa)
++ inserire classe hidden per elementi di left main che spariscono con layout più piccolo
 + 
