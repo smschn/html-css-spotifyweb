@@ -484,7 +484,8 @@ footer .container-right .actual-vol {
 Note: project done with width:1400px, height:1000px as default display size
 
 To do
-+ overlay effect add to every card with play symbol
-+ overflow sostituire scroll con auto (così compare in automatico la barra quando necessario, altrimenti rimane fissa)
++ overlay effect to every card with play symbol
++ overflow sostituire scroll con auto
 + inserire classe hidden per elementi di left main che spariscono con layout più piccolo
-+ 
++ media queries
++ effetti hover
