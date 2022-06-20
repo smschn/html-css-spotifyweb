@@ -623,12 +623,34 @@ footer .container-right .max-vol:hover .actual-vol {
 footer .length:hover .played-circle {
     display: inline-block;
 }
+
+footer .container-right .max-vol:hover .actual-vol {
+    animation: increase-vol 4s linear;
+}
 /* End of hover effects */
 
 /* Bonus part: start of animations */
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes increase-vol {
+    0% {
+        width: 2rem;
+    }
+    25% {
+        width: 70%;
+    }
+    50% {
+        width: 100%;
+    }
+    75% {
+        width: 70%;
+    }
+    100% {
+        width: 2rem;
     }
 }
 /* End of animation */
@@ -657,7 +679,6 @@ footer .length:hover .played-circle {
     width: 100px;
     height: 70px;
 }
-
 
 /*
 Note: project done with width:1400px, height:1000px as default display size
