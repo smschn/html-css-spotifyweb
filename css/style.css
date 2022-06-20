@@ -430,6 +430,10 @@ footer .container-center .sub-container.top ul li:nth-child(3) div {
     justify-content: center;
 }
 
+footer .container-center .sub-container.top .fa-rotate-right:hover {
+    animation: rotate 3s linear infinite;
+}
+
 /* Start of sub-container bottom */
 footer .container-center .sub-container.bottom {
     justify-content: center;
@@ -457,6 +461,17 @@ footer .container-center .sub-container.bottom .played {
 footer .container-center .sub-container.bottom .length,
 footer .container-center .sub-container.bottom .played {
     border-radius: 10px;
+}
+
+.played-circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--text-color-2);
+    position: absolute;
+    left: 18%;
+    bottom: -0.5rem;
+    display: none;
 }
 
 /* Start of container-right */
@@ -590,7 +605,19 @@ footer .container-center .sub-container.bottom .length:hover .played,
 footer .container-right .max-vol:hover .actual-vol {
     background-color: var(--text-color-3);
 }
+
+footer .length:hover .played-circle {
+    display: inline-block;
+}
 /* End of hover effects */
+
+/* Start of animation */
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* End of animation */
 
 /* Debug */
 .debug {
