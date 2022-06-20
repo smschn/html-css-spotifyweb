@@ -198,7 +198,7 @@ main .container,
 .main-right {
     width: calc(100% - 200px);
     background-color: var(--bgc-1);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 /* Start of cta */
@@ -320,6 +320,13 @@ main .container,
     bottom: 0;
     display: none;
     position: absolute;
+}
+
+.main-right .row .card-song .overlay div {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .main-right .album-info p {
@@ -557,8 +564,6 @@ footer .container-right .actual-vol {
 Note: project done with width:1400px, height:1000px as default display size
 
 To do
-+ overlay effect to every card with play symbol
-+ overflow sostituire scroll con auto
 + inserire classe hidden per elementi di left main che spariscono con layout più piccolo
 + media queries
 + effetti hover
