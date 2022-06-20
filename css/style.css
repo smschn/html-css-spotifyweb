@@ -148,24 +148,29 @@ main .container,
 .main-left .container .lower-container {
     flex-direction: column;
     justify-content: flex-end;
-    background-color: red; /* togliere */
+    /* background-color: red; */
     flex-grow: 1;
     flex-shrink: 0;
 }
 
 .main-left .container .lower-container .sub-container {
-    background-color: burlywood /* togliere */
+    /* background-color: burlywood */
 }
 
 .main-left .container .lower-container .sub-container .up,
 .main-left .container .lower-container .sub-container .down {
     align-items: center;
     margin: 0.5rem 0rem;
+    color: var(--text-color-1);
+}
+
+.main-left .container .lower-container .sub-container .up {
+    font-size: 0.9rem;
 }
 
 .main-left .container .lower-container .sub-container .up .download {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
     margin-right: 0.5rem;
 }
 
@@ -178,11 +183,15 @@ main .container,
     background-color: var(--text-color-1);
 }
 
-.main-left .container .lower-container .sub-container .row {
-    height: 0.2rem;
-    background-color: var(--text-color-1);
+.main-left .container .lower-container .sub-container .down p {
+    color: var(--text-color-2);
+    font-size: 1.2rem;
 }
 
+.main-left .container .lower-container .sub-container .row {
+    height: 0.1rem;
+    background-color: var(--text-color-1);
+}
 /* End of main-left */
 
 /* Start of main-right */
@@ -254,6 +263,20 @@ main .container,
 .main-right .navbar div {
     font-size: 0.8rem;
     padding: 0.5rem;
+}
+
+.main-right .navbar .lower-border {
+    position: relative;
+}
+
+.main-right .navbar .lower-border::after {
+    content: "";
+    position: absolute;
+    right: 30%;
+    bottom: 0;
+    height: 1px;
+    width: 40%;
+    border-bottom: 2px solid #82be24;
 }
 
 /* Start of row general rules */
