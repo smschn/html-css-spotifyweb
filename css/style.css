@@ -561,11 +561,25 @@ footer .container-right .actual-vol {
     .main-right .call-to-action {
         width: calc(100% - 60px);
     }
-    footer .fa-heart, /* Removed less important icons in order to have a better view in the footer on small layouts */
+    footer .fa-heart, /* Bonus part: removed less important icons in order to have a better view in the footer on small layouts */
     footer .fa-folder,
     footer .fa-list-ul,
     footer .fa-display {
         display: none;
+    }
+}
+
+/* Start of layout for min-height < 400px - bonus part */
+@media screen and (max-height: 399px) {
+    .main-right .call-to-action {
+        display: none;
+    }
+    .main-right,
+    .main-right .sub-container {
+        height: calc(100vh - 100px);
+    }
+    .main-right .sub-container {
+        margin-top: 0rem;
     }
 }
 /* End of media queries */
@@ -611,7 +625,7 @@ footer .length:hover .played-circle {
 }
 /* End of hover effects */
 
-/* Start of animation */
+/* Start of animation - bonus part */
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
