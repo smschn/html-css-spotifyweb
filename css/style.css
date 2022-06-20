@@ -543,6 +543,12 @@ footer .container-right .actual-vol {
     .main-right .call-to-action {
         width: calc(100% - 60px);
     }
+    footer .fa-heart, /* Removed less important icons in order to have a better view in the footer on small layouts */
+    footer .fa-folder,
+    footer .fa-list-ul,
+    footer .fa-display {
+        display: none;
+    }
 }
 /* End of media queries */
 
@@ -564,9 +570,4 @@ footer .container-right .actual-vol {
 Note: project done with width:1400px, height:1000px as default display size
 
 To do
-+ inserire classe hidden per elementi di left main che spariscono con layout più piccolo
-+ media queries
 + effetti hover
-+ da 767px 4 elementi album small
-+ 992px md
-+ 
