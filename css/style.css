@@ -490,11 +490,11 @@ footer .container-right .actual-vol {
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-    .main-right .row.first .container.album-info {
+    .main-right .row.first .container.album-info,
+    .main-right .row.second .container.album-info, 
+    .main-right .row.third .container.album-info {
         width: calc(100% / 4 - 10px);
         margin-right: 10px;
-        /* background-color: red; */
-        /* border: 1px dashed white; */
     }
 }
 
@@ -504,11 +504,11 @@ footer .container-right .actual-vol {
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-    .main-right .row.first .container.album-info {
+    .main-right .row.first .container.album-info,
+    .main-right .row.second .container.album-info, 
+    .main-right .row.third .container.album-info {
         width: calc(100% / 2 - 10px);
         margin-right: 10px;
-        /* background-color: red; */
-        /* border: 1px dashed white; */
     }
 }
 
