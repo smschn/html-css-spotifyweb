@@ -470,7 +470,7 @@ footer .container-center .sub-container.bottom .played {
     background-color: var(--text-color-2);
     position: absolute;
     left: 18%;
-    bottom: -0.5rem;
+    bottom: -0.4rem;
     display: none;
 }
 
@@ -500,6 +500,18 @@ footer .container-right .actual-vol {
 footer .container-right .max-vol,
 footer .container-right .actual-vol {
     border-radius: 10px;
+}
+
+footer .max-vol .played-circle {
+    animation: increase-vol-btn 4s 2s linear;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--text-color-2);
+    position: absolute;
+    left: 1.5rem;
+    bottom: -0.4rem;
+    display: none;
 }
 /* End of footer */
 
@@ -620,12 +632,17 @@ footer .container-right .max-vol:hover .actual-vol {
     background-color: var(--text-color-3);
 }
 
-footer .length:hover .played-circle {
+footer .length:hover .played-circle,
+footer .container-right .max-vol:hover .played-circle {
     display: inline-block;
 }
 
 footer .container-right .max-vol:hover .actual-vol {
-    animation: increase-vol 4s linear;
+    animation: increase-vol 4s 2s linear;
+}
+
+footer .container-right .max-vol:hover .played-circle {
+    animation: increase-vol-circle 4s 2s linear;
 }
 /* End of hover effects */
 
@@ -651,6 +668,24 @@ footer .container-right .max-vol:hover .actual-vol {
     }
     100% {
         width: 2rem;
+    }
+}
+
+@keyframes increase-vol-circle {
+    0% {
+        left: 1.5rem;
+    }
+    25% {
+        left: 70%;
+    }
+    50% {
+        left: 100%;
+    }
+    75% {
+        left: 70%;
+    }
+    100% {
+        left: 1.5rem;
     }
 }
 /* End of animation */
