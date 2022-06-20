@@ -554,6 +554,29 @@ footer .container-right .actual-vol {
 /* End of media queries */
 
 /* Start of hover effects */
+/* Start of main */
+.main-left .sub-container:nth-child(2):hover {
+    color: var(--text-color-3);
+    border-left: 2px solid var(--text-color-2);
+}
+
+.main-left .list h2:hover {
+    color: var(--text-color-3);
+}
+
+.main-left .hover:hover {
+    color: var(--text-color-2);
+}
+
+.main-left .container .lower-container .sub-container .down p:hover {
+    color: var(--text-color-3);
+}
+
+.main-right .navbar div:hover {
+    color: var(--text-color-3);
+}
+
+/* Start of footer */
 footer .hover:hover,
 footer .container-left .sub-container .data h4:hover,
 footer .fa-regular:hover,
@@ -581,8 +604,4 @@ footer .container-right .max-vol:hover .actual-vol {
 }
 
 /*
-
 Note: project done with width:1400px, height:1000px as default display size
-
-To do
-+ effetti hover
