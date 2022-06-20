@@ -72,7 +72,7 @@ main .container,
 /* Start of main-left */
 .main-left {
     width: 200px;
-    background-color: orange; /*bgc-2*/
+    background-color: var(--bgc-2); /*bgc-2*/
     overflow-y: auto;
 }
 
@@ -85,6 +85,7 @@ main .container,
 /* Start of upper part */
 .main-left .sub-container  {
     align-items: center;
+    padding: 0.2rem;
 }
 
 .main-left .sub-container .logo-big {
@@ -99,11 +100,22 @@ main .container,
     width: 2rem;
 }
 
+.main-left .sub-container {
+    color: var(--text-color-1);
+}
+
+.main-left .sub-container:nth-child(2) {
+    color: var(--text-color-2);
+    border-left: 2px solid #82be24;
+}
+
 .main-left .list {
     overflow-y: auto;
+    color: var(--text-color-1);
 }
 
 .main-left .list h2 {
+    margin-top: 1rem;
     text-transform: uppercase;
     font-size: 1rem;
     color: var(--text-color-2);
@@ -111,6 +123,7 @@ main .container,
 
 .main-left .list .container-plus {
     align-items: center;
+    padding: 0.3rem 0rem;
 }
 
 .main-left .list .plus {
@@ -122,9 +135,13 @@ main .container,
     margin-right: 0.5rem;
 }
 
-.main-left .list .plus ul {
+.main-left .list .plus i {
+    color: var(--bgc-2);
+}
+
+.main-left .list ul li {
     display: block;
-    margin: 3rem 0rem;
+    padding: 0.3rem 0rem;
 }
 
 /* Start of lower part */
@@ -489,3 +506,6 @@ To do
 + inserire classe hidden per elementi di left main che spariscono con layout più piccolo
 + media queries
 + effetti hover
++ da 767px 4 elementi album small
++ 992px md
++ 
