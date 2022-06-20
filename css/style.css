@@ -569,7 +569,7 @@ footer .container-right .actual-vol {
     }
 }
 
-/* Start of layout for min-height < 400px - bonus part */
+/* Bonus part: start of layout for min-height < 400px */
 @media screen and (max-height: 399px) {
     .main-right .call-to-action {
         display: none;
@@ -625,13 +625,25 @@ footer .length:hover .played-circle {
 }
 /* End of hover effects */
 
-/* Start of animation - bonus part */
+/* Bonus part: start of animations */
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
     }
 }
 /* End of animation */
+
+/* Bonus part: start of transactions */
+.main-right .call-to-action .btn {
+    transition: all 2s;
+}
+
+.main-right .call-to-action .btn:hover {
+    width: 300px;
+    text-decoration: underline;
+    border: 1px solid var(--text-color-3);
+}
+/* End of transactions */
 
 /* Debug */
 .debug {
@@ -645,6 +657,7 @@ footer .length:hover .played-circle {
     width: 100px;
     height: 70px;
 }
+
 
 /*
 Note: project done with width:1400px, height:1000px as default display size
