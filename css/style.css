@@ -153,9 +153,9 @@ main .container,
     flex-shrink: 0;
 }
 
-.main-left .container .lower-container .sub-container {
-    /* background-color: burlywood */
-}
+/* .main-left .container .lower-container .sub-container {
+    background-color: burlywood
+} */
 
 .main-left .container .lower-container .sub-container .up,
 .main-left .container .lower-container .sub-container .down {
@@ -484,24 +484,53 @@ footer .container-right .actual-vol {
 }
 
 /* Start of media queries */
-/* Start of md-layout max 767px*/
-@media screen and (max-width: 1199px) {
-    body {
-        background-color: grey;
+/* Start of md-layout max 991px*/
+@media screen and (max-width: 991px) {
+    .main-right .row.first {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .main-right .row.first .container.album-info {
+        width: calc(100% / 4 - 10px);
+        margin-right: 10px;
+        /* background-color: red; */
+        /* border: 1px dashed white; */
     }
 }
 
 /* Start of s-layout max 767px*/
 @media screen and (max-width: 767px) {
-    body {
-        background-color: black;
+    .main-right .row.first {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .main-right .row.first .container.album-info {
+        width: calc(100% / 2 - 10px);
+        margin-right: 10px;
+        /* background-color: red; */
+        /* border: 1px dashed white; */
     }
 }
 
 /* Start of xs-layout max 575px*/
 @media screen and (max-width: 575px) {
-    body {
-        background-color: purple;
+    .main-left {
+        width: 60px;
+    }
+    .main-left .logo-big,
+    .main-left .hidden-layout-xs,
+    .main-left .container .lower-container .sub-container .row {
+        display: none;
+    }
+    .main-left .logo-small {
+        display: block;
+    }
+    .main-left .up,
+    .main-left .down {
+        justify-content: center;
+    }
+    .main-right {
+        width: calc(100% - 60px);
     }
 }
 /* End of media queries */
