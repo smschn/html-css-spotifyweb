@@ -522,14 +522,18 @@ footer .container-right .actual-vol {
     .main-left .container .lower-container .sub-container .row {
         display: none;
     }
-    .main-left .logo-small {
+    .main-left .sub-container .logo-small {
         display: block;
+        margin-bottom: 0.5rem;
     }
     .main-left .up,
     .main-left .down {
         justify-content: center;
     }
     .main-right {
+        width: calc(100% - 60px);
+    }
+    .main-right .call-to-action {
         width: calc(100% - 60px);
     }
 }
