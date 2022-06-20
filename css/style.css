@@ -273,7 +273,9 @@ main .container,
 .main-right .navbar .lower-border::after {
     content: "";
     position: absolute;
-    right: 30%;
+    right: 0;
+    left: 0;
+    margin: auto;
     bottom: 0;
     height: 1px;
     width: 40%;
