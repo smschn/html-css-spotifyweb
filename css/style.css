@@ -111,8 +111,13 @@ main .container,
 }
 
 .main-left .list {
-    overflow-y: auto;
     color: var(--text-color-1);
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main-left .list ul {
+    overflow-y: auto;
 }
 
 .main-left .list h2 {
